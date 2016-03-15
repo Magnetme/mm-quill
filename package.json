@@ -1,12 +1,12 @@
 {
-  "name": "quill",
+  "name": "mm-quill",
   "version": "0.20.0",
-  "description": "Cross browser rich text editor",
+  "description": "Magnet.me specific fork of quill, a cross browser rich text editor",
   "author": "Jason Chen <jhchen7@gmail.com>",
-  "homepage": "http://quilljs.com",
   "contributors": [
     "Byron Milligan <byronner@gmail.com>",
-    "Keegan Poppen <keegan.poppen@gmail.com>"
+    "Keegan Poppen <keegan.poppen@gmail.com>",
+    "Tiddo Langerak <tiddo@magnet.me>"
   ],
   "main": "index.js",
   "devDependencies": {
@@ -66,10 +66,10 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quilljs/quill"
+    "url": "https://github.com/Magnetme/mm-quill"
   },
   "bugs": {
-    "url": "https://github.com/quilljs/quill/issues"
+    "url": "https://github.com/Magnetme/mm-quill/issues"
   },
   "scripts": {
     "prepublish": "grunt dist",
