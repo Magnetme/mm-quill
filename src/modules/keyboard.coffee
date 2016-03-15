@@ -53,8 +53,13 @@ class Keyboard
       return true unless range?
       [line, offset] = @quill.editor.doc.findLineAt(range.start)
       [leaf, offset] = line.findLeafAt(offset)
+
       delta = new Delta().retain(range.start).insert('\n', line.formats).delete(range.end - range.start)
       @quill.updateContents(delta, Quill.sources.USER)
+
+      removeFormats = (Object.keys line.formats).filter (format) => line.doc.formats[format].config.clearOnNewline
+      removeFormats.forEach (format) => @quill.prepareFormat(format, false)
+
       _.each(leaf.formats, (value, format) =>
         @quill.prepareFormat(format, value)
         @toolbar.setActive(format, value) if @toolbar?
