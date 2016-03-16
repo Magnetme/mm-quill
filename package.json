@@ -1,12 +1,12 @@
 {
-  "name": "quill",
-  "version": "0.20.0",
-  "description": "Cross browser rich text editor",
+  "name": "mm-quill",
+  "version": "1.0.0",
+  "description": "Magnet.me specific fork of quill, a cross browser rich text editor",
   "author": "Jason Chen <jhchen7@gmail.com>",
-  "homepage": "http://quilljs.com",
   "contributors": [
     "Byron Milligan <byronner@gmail.com>",
-    "Keegan Poppen <keegan.poppen@gmail.com>"
+    "Keegan Poppen <keegan.poppen@gmail.com>",
+    "Tiddo Langerak <tiddo@magnet.me>"
   ],
   "main": "index.js",
   "devDependencies": {
@@ -32,7 +32,7 @@
     "grunt-lodash": "~0.4.0",
     "grunt-protractor-runner": "~2.0.0",
     "grunt-sauce-connect-launcher": "~0.3.0",
-    "harp": "~0.17.0",
+    "harp": "^0.20.1",
     "http-proxy": "~1.11.1",
     "istanbul": "~0.3.5",
     "jasmine-core": "~2.3.4",
@@ -53,6 +53,7 @@
     "rich-text": "~2.0.0",
     "stylify": "~1.0.0",
     "stylus": "~0.51.1",
+    "terraform": "^0.13.1",
     "through": "~2.3.7",
     "watchify": "~3.2.1"
   },
@@ -65,10 +66,10 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quilljs/quill"
+    "url": "https://github.com/Magnetme/mm-quill"
   },
   "bugs": {
-    "url": "https://github.com/quilljs/quill/issues"
+    "url": "https://github.com/Magnetme/mm-quill/issues"
   },
   "scripts": {
     "prepublish": "grunt dist",
@@ -79,5 +80,8 @@
     "editor",
     "rich text",
     "wysiwyg"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "http://npm.internal.magnet.me:4873/"
+  }
 }

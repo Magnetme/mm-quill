@@ -78,6 +78,12 @@ class Format
       parentTag: 'OL'
       tag: 'LI'
 
+    h1:
+      type: Format.types.LINE
+      clearOnNewline : true,
+      tag: 'H1'
+
+
 
   constructor: (@config) ->
 

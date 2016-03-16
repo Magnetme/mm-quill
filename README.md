@@ -1,3 +1,12 @@
+# Magnet.me fork of the [Quill Rich Text Editor](http://quilljs.com/)
+
+This is the Magnet.me specific fork of the Quill editor. It is based upon quill 0.20, with the following changes:
+
+- Support for H1 tags
+- Only 1 line styling is allowed at a time
+
+This fork is intended solely for the use on [Magnet.me](http://magnet.me). Anyone is free to use this fork, but we will not provide any support for it.
+
 # [Quill Rich Text Editor](http://quilljs.com/) [![Build Status](https://travis-ci.org/quilljs/quill.svg?branch=master)](http://travis-ci.org/quilljs/quill)
 
 [![Webdriver Test Status](https://saucelabs.com/browser-matrix/quill-master.svg)](https://saucelabs.com/u/quill)
