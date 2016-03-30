@@ -17,7 +17,13 @@ class Wrapper
   attributes: (attributes) ->
     if attributes
       _.each(attributes, (value, name) =>
-        @node.setAttribute(name, value)
+        # Pasted html can contain invalid attributes, which will cause the editor to fail.
+        # Therefore we surround the setAttribute call in try-catch, such that we can ignore
+        # these errors
+        try
+          @node.setAttribute(name, value)
+        catch e
+          #ignore
       )
       return this
     else
