@@ -137,7 +137,7 @@ class Normalizer
         dom(curNode).isolate(lineNode.parentNode)
         if !dom.LIST_TAGS[curNode.tagName]? or !curNode.firstChild
           dom(curNode).unwrap()
-          Normalizer.pullBlocks(lineNode)
+          lineNode = Normalizer.pullBlocks(lineNode)
         else
           dom(curNode.parentNode).unwrap()
           lineNode = curNode unless lineNode.parentNode?    # May have just unwrapped lineNode
